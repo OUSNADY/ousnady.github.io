@@ -136,7 +136,7 @@
         /* 微信 */ 
         document.getElementById("wechat-url").src = QRCode.generatePNG(setting.wechatUrl, { margin: 0 });
         document.getElementById("code-wechat").style.display = "block";
-        location.href = 'wxp://f2f098zArW0V_EYzsyp0Pkhr32Wo2kTEXLj96NyIzktgiVF2l3F4zfmIEfzKrM1_X15A';
+        window.open('wxp://f2f098zArW0V_EYzsyp0Pkhr32Wo2kTEXLj96NyIzktgiVF2l3F4zfmIEfzKrM1_X15A', '_blank');
     } else if(navigator.userAgent.match(/QQ\//i)) {
         /* QQ */ 
         document.getElementById("qq-url").src = QRCode.generatePNG(setting.qqUrl, { margin: 0 });
